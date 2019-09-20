@@ -11,9 +11,11 @@ bool espalindrome(int n){
     e=n%10;
 
     if(a==e && b==d){
+        cout << " Es palindorme";
         return true;
     }
     else{
+        cout << " No es palindorme";
         return false;
     }
 }
@@ -22,11 +24,6 @@ int main()
     int n;
     cout << "Escribe un numero de 5 digitos";
     cin >> n;
-    if(espalindrome(n)){
-        cout << " Es palindorme";
-    }
-    else{
-        cout << " No es palindrome";
-    }
+    espalindrome(n);
     return 0;
 }
