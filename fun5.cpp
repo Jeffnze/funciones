@@ -2,21 +2,22 @@
 
 using namespace std;
 //Jeff Zapana Enriquez
-bool caracter(char car){
-    int n = static_cast<int>(car);
-    if (n>47 && n<58)
+bool caracter(char n){
+    int a = static_cast<int>(n);
+    if (a>=47 && a<=58){
+        cout << n << " Es un numero"<<endl;
         return true;
-    else
+    }
+    else{
+        cout << n << " No es un numero"<<endl;
         return false;
+    }
 }
 int main()
 {
-    int n;
-    cout << "Escribe un numero: ";
+    char n;
+    cout << "Escribe un caracter: ";
     cin >> n;
-    if(caracter(n))
-        cout << "Es un numero";
-    else
-        cout << "No es un numero";
+    caracter (n);
     return 0;
 }
